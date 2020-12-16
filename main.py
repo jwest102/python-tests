@@ -18,7 +18,7 @@ cur = con.cursor()
 
 for row in cur.execute("SELECT name FROM sqlite_master WHERE type='table';"):
     print(row)
-#for row in cur.execute("SELECT * FROM 'responses';"):
-#    print(row)
+for row in cur.execute("SELECT * FROM 'responses';"):
+    print(row)
 
 con.close()
